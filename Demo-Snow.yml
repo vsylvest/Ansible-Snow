@@ -1,0 +1,18 @@
+---
+- name: Test Incident
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  ignore_errors: True
+  tasks:
+    - name: Attach a file to an incident
+      snow_record:
+        username: admin
+        password: Redhat@123
+        host: dev64008.service-now.com
+        state: present
+        data:
+          short_description: "This is a test incident opened by Ansible"
+          severity: 3
+          priority: 2
+      register: new_incident
