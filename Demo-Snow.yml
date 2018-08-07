@@ -9,7 +9,7 @@
       snow_record:
         username: admin
         password: Redhat@123
-        host: dev64008.service-now.com
+        instance: dev64008
         state: present
         data:
           short_description: "This is a test incident opened by Ansible"
