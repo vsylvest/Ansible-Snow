@@ -5,11 +5,14 @@
 2. Ensure python pysnow module is installed.
    
    
-   Ansible Engine.
+   Ansible Engine
+   
    pip install pysnow
    
-   Ansible Tower.
+   Ansible Tower
+   
    /var/lib/awx/venv/ansible/bin/activate
+   
    pip install pysnow
    
    
