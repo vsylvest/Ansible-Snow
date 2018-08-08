@@ -6,12 +6,12 @@
   tasks:
     - name: Create an incident
       snow_record:
-        username: admin
-        password: Redhat@123
-        instance: dev64008
+        username: "{{ snow_username }}"
+        password: "{{ snow_password }}"
+        instance: "{{ instance_id }}"
         state: present
         data:
-          short_description: "Jim is gonna blow transurban away"
+          short_description: "New Ansible Tower Incident"
           severity: 4
           priority: 2
       register: new_incident
