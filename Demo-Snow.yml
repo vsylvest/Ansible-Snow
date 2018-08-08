@@ -3,9 +3,8 @@
   hosts: localhost
   connection: local
   gather_facts: no
-  ignore_errors: True
   tasks:
-    - name: Attach a file to an incident
+    - name: Create an incident
       snow_record:
         username: admin
         password: Redhat@123
