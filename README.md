@@ -7,13 +7,13 @@
    
    Ansible Engine
    
-   pip install pysnow
+        pip install pysnow
    
    Ansible Tower
    
-   /var/lib/awx/venv/ansible/bin/activate
+        /var/lib/awx/venv/ansible/bin/activate
    
-   pip install pysnow
+        pip install pysnow
    
    
 
