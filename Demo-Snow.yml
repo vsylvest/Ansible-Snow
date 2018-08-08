@@ -3,6 +3,10 @@
   hosts: localhost
   connection: local
   gather_facts: no
+  vars:
+    snow_username: admin
+    snow_password: Redhat@123
+    instance_id: dev64008
   tasks:
     - name: Create an incident
       snow_record:
