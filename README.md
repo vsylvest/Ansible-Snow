@@ -11,7 +11,7 @@
    
    Ansible Tower
    
-        /var/lib/awx/venv/ansible/bin/activate
+        . /var/lib/awx/venv/ansible/bin/activate
    
         pip install pysnow
    
