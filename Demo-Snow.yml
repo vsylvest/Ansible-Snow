@@ -4,8 +4,8 @@
   connection: local
   gather_facts: no
   vars:
-    snow_username: temp1
-    snow_password: temp1
+    snow_username: admin
+    snow_password: s!984V62729
     instance_id: dev1
   tasks:
     - name: Create an incident
