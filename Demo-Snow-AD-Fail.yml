@@ -6,7 +6,7 @@
   vars:
     snow_username: admin
     snow_password: Redhat@123
-    instance_id: dev1
+    instance_id: dev64008
   tasks:
     - name: Create an incident
       snow_record:
@@ -19,4 +19,3 @@
           severity: 4
           priority: 2
       register: win_ad_failed
-      
