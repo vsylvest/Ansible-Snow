@@ -19,4 +19,5 @@
           description: "Creation of Windows Instance on EC2 is successful, network update has been successful"
           severity: 1
           priority: 1
+          assigned_to: vsylvest
       register: net-pass
