@@ -1,0 +1,19 @@
+---
+- name: Test Incident
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  vars:
+    snow_username: admin
+    snow_password: Redhat@123
+    instance_id: dev64008
+  tasks:
+    - name: New incident in Service Now
+      snow_record:
+          username: "{{ snow_username }}"
+          password: "{{ snow_password }}"
+          instance: "{{ instance_id }}"
+        state: present
+        number: 62826bf03710200044e0bfc8bcbe5df1
+        table: sys_user
+        lookup_field: sys_id

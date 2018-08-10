@@ -16,6 +16,7 @@
         state: present
         data:
           short_description: "Creation of Windows Instace - requires network update"
+          description: "Creation of Windows Instance on EC2 is successful, network update has failed"
           severity: 4
           priority: 2
       register: net-fail

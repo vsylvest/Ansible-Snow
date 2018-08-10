@@ -8,12 +8,15 @@
     snow_password: Redhat@123
     instance_id: dev64008
   tasks:
-    - name: New incident in Service Now
+    - name: Create an incident
       snow_record:
-          username: "{{ snow_username }}"
-          password: "{{ snow_password }}"
-          instance: "{{ instance_id }}"
+        username: "{{ snow_username }}"
+        password: "{{ snow_password }}"
+        instance: "{{ instance_id }}"
         state: present
-        number: 62826bf03710200044e0bfc8bcbe5df1
-        table: sys_user
-        lookup_field: sys_id
+        data:
+          short_description: "Creation of Windows Instace, Network update successful"
+          description: "Creation of Windows Instance on EC2 is successful, network update has been successful"
+          severity: 1
+          priority: 1
+      register: net-pass
