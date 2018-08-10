@@ -1,0 +1,21 @@
+---
+- name: Test Incident
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  vars:
+    snow_username: admin
+    snow_password: Redhat@123
+    instance_id: dev1
+  tasks:
+    - name: Create an incident
+      snow_record:
+        username: "{{ snow_username }}"
+        password: "{{ snow_password }}"
+        instance: "{{ instance_id }}"
+        state: present
+        data:
+          short_description: "Creation of Windows Instace - requires network update"
+          severity: 4
+          priority: 2
+      register: net-fail
