@@ -5,7 +5,7 @@
   gather_facts: no
   vars:
     snow_username: admin
-    snow_password: s!984V62729
+    snow_password: Redhat@123
     instance_id: dev1
   tasks:
     - name: Create an incident
