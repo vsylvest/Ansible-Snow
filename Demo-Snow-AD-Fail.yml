@@ -19,5 +19,5 @@
           description: "Installation of Active Directory on EC2 has failed"
           severity: 4
           priority: 2
-          short_description: vsylvest
+          assigned_to: vsylvest
       register: win_ad_failed
