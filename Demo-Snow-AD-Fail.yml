@@ -8,7 +8,7 @@
       snow_record:
         username: "{{ snow_username }}"
         password: "{{ snow_password }}"
-        instance: "{{ snow_instance_id }}"
+        instance: "{{ snow_instance }}"
         state: present
         data:
           short_description: "New Ansible Tower Incident"
