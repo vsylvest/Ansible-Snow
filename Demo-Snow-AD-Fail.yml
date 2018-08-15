@@ -16,4 +16,4 @@
           severity: 4
           priority: 2
           assigned_to: vsylvest
-      register: win_ad_faileded
+      register: win_ad_failed
