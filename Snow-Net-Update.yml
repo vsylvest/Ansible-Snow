@@ -12,7 +12,7 @@
         state: present
         data:
           short_description: "Update of Network Device Complete"
-          description: "New GRE Tunnel has been added to device {{ inventory_hostname }} "
+          description: "New GRE Tunnel has been added to devices rtr1 and rtr2 "
           severity: 4
           priority: 2 
           assigned_to: vsylvest
