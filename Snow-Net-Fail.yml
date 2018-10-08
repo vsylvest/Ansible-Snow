@@ -11,8 +11,8 @@
         instance: "{{ snow_instance }}"
         state: present
         data:
-          short_description: "Creation of Windows Instance - requires network update"
-          description: "Creation of Windows Instance on EC2 is successful, network update has failed"
+          short_description: "Update of Network Device has failed"
+          description: "Configuraiton Restored to the previous backup"
           severity: 4
           priority: 2 
           assigned_to: vsylvest
