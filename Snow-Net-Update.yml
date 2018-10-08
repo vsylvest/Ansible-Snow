@@ -1,5 +1,5 @@
 ---
-- name: SNOW Incident
+- name: New SNOW incident
   hosts: localhost
   connection: local
   gather_facts: no
@@ -11,9 +11,9 @@
         instance: "{{ snow_instance }}"
         state: present
         data:
-          short_description: "Creation of Windows Instance - requires network update"
-          description: "Creation of Windows Instance on EC2 is successful, network update has failed"
+          short_description: "Update of Network Device Complete"
+          description: "New GRE Tunnel has been added to device {{ inventory_hostname }} "
           severity: 4
           priority: 2 
           assigned_to: vsylvest
-      register: net-fail
+      register: net-pass
