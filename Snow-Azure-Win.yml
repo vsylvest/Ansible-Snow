@@ -12,8 +12,8 @@
         state: present
         data:
           short_description: "New Ansible Tower Incident"
-          description: "Installation of Active Directory on EC2 has failed"
+          description: "New Instance of Windows available in Azure"
           severity: 4
           priority: 2
-          assigned_to: vsylvest
-      register: win_ad_failed
+          assigned_to: lhobley
+      register: win_azure_success
