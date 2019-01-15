@@ -1,0 +1,19 @@
+---
+- name: Raise Ticket to notify successful 3 tier application deployment
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: Create an incident
+      snow_record:
+        username: "{{ snow_username }}"
+        password: "{{ snow_password }}"
+        instance: "{{ snow_instance }}"
+        state: present
+        data:
+          short_description: "Creation of 3 Tier Application failed, restoration of Network successful"
+          description: "Creation of 3 tier application on EC2 has failed, please investigate"
+          severity: 1
+          priority: 1
+          assigned_to: vsylvest
+      register: net-pass
