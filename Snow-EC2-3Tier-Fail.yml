@@ -1,5 +1,5 @@
 ---
-- name: Raise Ticket to notify successful 3 tier application deployment
+- name: Raise Ticket to notify failure 3 tier application deployment
   hosts: localhost
   connection: local
   gather_facts: no
