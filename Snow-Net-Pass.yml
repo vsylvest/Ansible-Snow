@@ -15,5 +15,4 @@
           description: "production is ready for changes"
           severity: 4
           priority: 2 
-          assigned_to: vsylvest
       register: net-pass
