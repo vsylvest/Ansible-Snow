@@ -4,16 +4,16 @@
   connection: local
   gather_facts: no
   tasks:
-    - name: Create an incident
+    - name: Test Network Configuration Change Completed
       snow_record:
         username: "{{ snow_username }}"
         password: "{{ snow_password }}"
         instance: "{{ snow_instance }}"
         state: present
         data:
-          short_description: "Update of Network Device has failed"
-          description: "Configuraiton Restored to the previous backup"
+          short_description: "Network Changes on IOS Router has completed"
+          description: "production is ready for changes"
           severity: 4
           priority: 2 
           assigned_to: vsylvest
-      register: net-fail
+      register: net-pass
